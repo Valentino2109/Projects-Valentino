@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Text */
+h1 {
+  text-align: center;
+  margin: 8% 0;
+}
+p {
+  position: absolute;
+  right: 0.2rem;
+  bottom: -0.7rem;
+}
+span {
+  position: absolute;
+  bottom: 0;
+  left: 90%;
+  font-size: 2rem;
+}
+
+/* Windows */
+#main-window {
+  border: solid black 2px;
+  border-radius: 0.5rem;
+  width: 18rem;
+  height: 27rem;
+  position: relative;
+  margin: auto;
+  padding: 0.8rem;
+}
+#main-window #input-window {
+  height: 7rem;
+  margin-bottom: 3rem;
+  outline: skyblue 0.2rem solid;
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  font-size: 2rem;
+}
+#flex-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+#flex-btns .btn {
+  width: 3.6rem;
+  height: 2.8rem;
+  font-size: 1.5rem;
+}
+#flex-btns .btn:nth-child(15) {
+  position: relative;
+  width: 7.7rem;
+}
+
+/*  Hover */
+.btn:hover {
+  cursor: pointer;
+  background-color: skyblue;
+}
+.btn:hover:nth-child(15) {
+  background-color: rgb(252, 120, 120);
+}
