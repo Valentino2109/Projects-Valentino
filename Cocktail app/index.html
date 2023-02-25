@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./pictures/title-drink.png" />
+    <title>Cocktail App</title>
+  </head>
+  <body>
+    <!-- Top part -->
+    <div id="top__part">
+      <img src="./pictures/barman.png" alt="Your favourite barman!" />
+      <h1>Search for you favourite cocktail</h1>
+    </div>
+
+    <!-- Search box -->
+    <div id="search-box">
+      <input
+        type="text"
+        name="text"
+        placeholder="Cocktail name"
+        size="30"
+        id="input-window"
+      />
+      <button id="btn-search">Search</button>
+    </div>
+
+    <!-- Two windows for the list and details -->
+    <div id="window-flex">
+      <!-- List of cocktails -->
+      <div id="cocktail-list"></div>
+
+      <!-- Details -->
+      <div id="cocktail-details"></div>
+    </div>
+    <script defer src="./script.js"></script>
+  </body>
+</html>

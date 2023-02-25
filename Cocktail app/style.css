@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+}
+
+#top__part {
+  text-align: center;
+}
+#top__part > img {
+  width: 12%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#search-box {
+  margin-top: 2%;
+  text-align: center;
+}
+
+#window-flex {
+  margin-top: 4%;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+#window-flex > div {
+  width: 45%;
+  border: solid black 1px;
+}
