@@ -1,0 +1,33 @@
+/* Header style */
+header {
+  text-align: center;
+  height: 20vh;
+  line-height: 20vh;
+}
+
+/* Asied style */
+aside {
+  width: 20vw;
+}
+aside h2 {
+  text-align: center;
+}
+aside img {
+  width: 1.5rem;
+}
+aside li {
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+aside a:link {
+  text-decoration: none;
+}
+aside > a:visited {
+  text-decoration: line-through;
+}
+aside > a:hover {
+  text-decoration: none;
+}
+aside > a:active {
+  text-decoration: none;
+}

@@ -66,6 +66,7 @@ const handleDrinkDetails = function (event) {
 
   // On each click, refresh the list
   cocktailDetails.innerHTML = ``;
+  input.value = ``;
 
   // Search drink details by its ID
   const request = new XMLHttpRequest();
