@@ -1,31 +1,81 @@
 * {
   margin: 0;
+  font-family: "Nunito", sans-serif;
 }
 
 #top__part {
   text-align: center;
+  height: 23rem;
 }
 #top__part > img {
-  width: 12%;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  width: 15rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-
 #search-box {
-  margin-top: 2%;
+  margin-top: 1rem;
   text-align: center;
 }
-
 #window-flex {
-  margin-top: 4%;
   display: flex;
-  width: 100%;
-  justify-content: space-evenly;
+  position: relative;
+  justify-content: space-around;
   align-items: flex-start;
-  gap: 2rem;
+  margin: auto;
+  margin-top: 2rem;
+  gap: 3rem;
+}
+#window-flex > div {
+  width: 30%;
+}
+#window-flex > div:nth-child(2) {
+  border-left: solid black 1px;
 }
 
-#window-flex > div {
-  width: 45%;
-  border: solid black 1px;
+#cocktail-list {
+  margin-top: 2rem;
+}
+
+.cocktail-list-ordered > li {
+  margin-bottom: 0.3rem;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+/* Hover effects */
+.cocktail-list-ordered > li:hover {
+  text-decoration: underline skyblue wavy 2px;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Details DIV styling */
+#cocktail-details {
+  text-align: center;
+}
+#cocktail-details > h2 {
+  margin: 1rem auto 2rem;
+}
+#cocktail-details img {
+  width: 50%;
+  border-radius: 8%;
+  opacity: 0.8;
+}
+#cocktail-details > h3 {
+  margin: 2rem auto 0.1rem;
+}
+#cocktail-details > p {
+  text-align: justify;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+#cocktail-details > h4 {
+  margin: 1rem auto 0.5rem;
+  text-align: left;
+  margin-left: 1rem;
+}
+#cocktail-details > ul > * {
+  margin-left: 1rem;
+  text-align: left;
+  font-size: 0.9rem;
 }
