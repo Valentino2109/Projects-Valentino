@@ -25,7 +25,7 @@ const handleButtonSearch = function () {
   );
   request.send();
 
-  // Must have more than 2 letters and error handling
+  // Must have more than 2 letters
   if (getCocktailName.length < 3) {
     return;
   }
@@ -35,7 +35,12 @@ const handleButtonSearch = function () {
     const data = JSON.parse(this.response);
     const drinksAll = data.drinks;
 
-    console.log(request);
+    // Error handling
+    if (data.drinks === null) {
+      alert(`Cocktail doesn't exist!`);
+      cocktailDetails.innerHTML = ``;
+    }
+
     // For loop
     for (let i = 0; i < drinksAll.length; i++) {
       // Grabbing all drinks from the input
@@ -88,13 +93,29 @@ const handleDrinkDetails = function (event) {
     <img src="${data.drinks[0].strDrinkThumb}" alt="Picture of ${data.drinks[0].strDrink}" />
     <h3>How to instructions:</h3>
     <p>${data.drinks[0].strInstructions}</p>
-    <h4>Ingredients:</h4>
-    <ul>
-    <li>${data.drinks[0].strIngredient1}</li>
-    <li>${data.drinks[0].strIngredient2}</li>
-    <li>${data.drinks[0].strIngredient3}</li>
-    </ul>
     `;
+
+    // Ingredients problem solving
+    if (data.drinks[0].strIngredient3 !== null) {
+      const ingredientsFix = `
+      <h4>Ingredients:</h4>
+      <ul>
+      <li>${data.drinks[0].strIngredient1}</li>
+      <li>${data.drinks[0].strIngredient2}</li>
+      <li>${data.drinks[0].strIngredient3}</li>
+      </ul>
+      `;
+      cocktailDetails.insertAdjacentHTML(`beforeend`, ingredientsFix);
+    } else {
+      const ingredientsFix = `
+      <h4>Ingredients:</h4>
+      <ul>
+      <li>${data.drinks[0].strIngredient1}</li>
+      <li>${data.drinks[0].strIngredient2}</li>
+      </ul>
+      `;
+      cocktailDetails.insertAdjacentHTML(`beforeend`, ingredientsFix);
+    }
 
     // Exporting new list item to HTML
     cocktailDetails.insertAdjacentHTML(`afterbegin`, allDetails);
