@@ -5,18 +5,12 @@
 /* Text */
 h1 {
   text-align: center;
-  margin: 5% 0;
+  margin: 8rem auto 2.5rem;
 }
 p {
   position: absolute;
   right: 0.2rem;
   bottom: -0.7rem;
-}
-span {
-  position: absolute;
-  bottom: 0;
-  left: 90%;
-  font-size: 2rem;
 }
 
 /* Windows */
@@ -64,4 +58,7 @@ span {
 }
 .btn:hover:nth-child(15) {
   background-color: rgb(252, 120, 120);
+}
+.btn:hover:nth-child(12) {
+  background-color: rgb(146, 252, 120);
 }
