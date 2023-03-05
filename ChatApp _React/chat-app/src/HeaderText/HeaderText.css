@@ -1,0 +1,16 @@
+#_main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+}
+
+#_main h1 {
+  margin-top: 20rem;
+  font-size: 5rem;
+  width: 30%;
+}
+
+#_main div {
+  height: 10rem;
+}
