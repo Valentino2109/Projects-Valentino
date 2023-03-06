@@ -6,8 +6,8 @@ export default function MainLogin() {
     <div id="container">
       <h2>Login</h2>
       <div id="inputbox">
-        <label>Enter your name</label>
         <input type="textbox" />
+        <label>Enter your name</label>
       </div>
       <button className="enter-btn">Log in</button>
       <h6>Created by Valentino</h6>

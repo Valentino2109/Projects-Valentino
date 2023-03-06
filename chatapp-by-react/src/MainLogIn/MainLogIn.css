@@ -1,13 +1,17 @@
 #container {
+  box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 16rem;
-  height: 20rem;
+  width: 20rem;
+  height: 24rem;
   background-color: transparent;
-  border: solid 0.2rem white;
+  opacity: 0.8;
+  border-left: solid 0.2rem white;
+  border-right: solid 0.2rem white;
   border-radius: 1rem;
+  overflow: hidden;
 }
 #container h2 {
   font-size: 2.8rem;
@@ -30,7 +34,8 @@
 }
 #container #inputbox label {
   position: absolute;
-  font-size: 0.8rem;
+  left: 0;
+  font-size: 1rem;
   pointer-events: none;
   color: white;
   transition: 0.5s;
@@ -46,19 +51,21 @@
   border: none;
   outline: none;
   cursor: pointer;
+  transition: 0.5s;
 }
 #container h6 {
   position: absolute;
   bottom: 3%;
-  font-style: italic;
   color: white;
 }
 
-/* Transitions while typing inside inputs */
-#container #inputbox:active {
-  color: red;
+/* Transitions */
+input:focus ~ label,
+input:active ~ label {
+  margin-top: -1.2rem;
+  opacity: 0.4;
 }
 
 button:hover {
-  color: red;
+  scale: 1.1;
 }
