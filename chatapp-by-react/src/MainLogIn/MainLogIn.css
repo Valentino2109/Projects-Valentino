@@ -7,11 +7,13 @@
   width: 20rem;
   height: 24rem;
   background-color: transparent;
-  opacity: 0.8;
+  opacity: 0;
   border-left: solid 0.2rem white;
   border-right: solid 0.2rem white;
   border-radius: 1rem;
-  overflow: hidden;
+  animation: fade 1s linear;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 #container h2 {
   font-size: 2.8rem;
@@ -59,13 +61,22 @@
   color: white;
 }
 
-/* Transitions */
+/* Effects */
 input:focus ~ label,
 input:active ~ label {
   margin-top: -1.2rem;
   opacity: 0.4;
 }
-
 button:hover {
   scale: 1.1;
+}
+
+/* Animations */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
