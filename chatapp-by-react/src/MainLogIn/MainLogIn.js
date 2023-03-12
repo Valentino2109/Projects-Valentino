@@ -6,7 +6,7 @@ export default function MainLogin() {
     <div id="container">
       <h2>Login</h2>
       <div id="inputbox">
-        <input type="textbox" />
+        <input type="textbox" required />
         <label>Enter your name</label>
       </div>
       <button className="enter-btn">Log in</button>

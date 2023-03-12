@@ -6,7 +6,7 @@ import Title from "./Title/Title";
 
 function App() {
   return (
-    <div id="main-app">
+    <div className="intro hide-intro">
       <Title />
       <MainLogin />
     </div>

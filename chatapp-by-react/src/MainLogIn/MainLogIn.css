@@ -28,7 +28,7 @@
 }
 #container #inputbox input {
   width: 100%;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   background: transparent;
   border: none;
   outline: none;
@@ -63,7 +63,7 @@
 
 /* Effects */
 input:focus ~ label,
-input:active ~ label {
+input:valid ~ label {
   margin-top: -1.2rem;
   opacity: 0.4;
 }
@@ -77,6 +77,6 @@ button:hover {
     opacity: 0;
   }
   100% {
-    opacity: 0.8;
+    opacity: 0.85;
   }
 }
